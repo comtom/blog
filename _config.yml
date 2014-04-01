@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Comtom's
+tagline:          'blog'
+description:      'Base theme for Tomass blog by @mdo.'
+url:              http://getpoole.com
+
+author:
+  name:           'Tomas Gonzalez Dowling'
+  url:            https://twitter.com/therealcomtom
+
+paginate:         1
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/poole/poole
