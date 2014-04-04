@@ -19,43 +19,33 @@ The new php version performance is quite good, I haven't measure it properly, bu
 ## Code
 Yes, finally the most interesting part. This code is licenced under GPL v3. Use it, and hack it, would be nice to see more changes or improvements. Any comment would be great too. Feel free to leave them at the comments form at the bottom.
 
+
 {% highlight php %}
 <?php
 
 if (! extension_loaded('mssql')) {
     //Return an associative array. Used on mssql_fetch_array()'s result_type parameter.
     define('MSSQL_ASSOC', '1');
-
     //Return an array with numeric keys. Used on mssql_fetch_array()'s result_type parameter.
     define('MSSQL_NUM', '2');
-
     //Return an array with both numeric keys and keys with their field name. This is the default value for mssql_fetch_array()'s result_type parameter.
     define('MSSQL_BOTH', '3');
-
     //Indicates the 'TEXT' type in MSSQL, used by mssql_bind()'s type parameter.
     define('SQLTEXT', '35');
-
     //Indicates the 'VARCHAR' type in MSSQL, used by mssql_bind()'s type parameter.
     define('SQLVARCHAR', '39');
-
     //Indicates the 'CHAR' type in MSSQL, used by mssql_bind()'s type parameter.
     define('SQLCHAR', '47');
-
     //Represents one byte, with a range of -128 to 127.
     define('SQLINT1', '48');
-
     //Represents two bytes, with a range of -32768 to 32767.
     define('SQLINT2', '52');
-
     //Represents four bytes, with a range of -2147483648 to 2147483647.
     define('SQLINT4', '56');
-
     //Indicates the 'BIT' type in MSSQL, used by mssql_bind()'s type parameter.
     define('SQLBIT', '50');
-
     //Represents an four byte float.
     define('SQLFLT4', '59');
-
     //Represents an eight byte float.
     define('SQLFLT8', '62');
 
