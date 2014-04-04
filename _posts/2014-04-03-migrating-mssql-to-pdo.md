@@ -91,6 +91,8 @@ if (! extension_loaded('mssql')) {
         return $ret;
     }
 
+    #@todo write a mssql_close function
+
     function mssql_connect($servername, $username, $password, $new_link = false) {
         $pdo = new PDO('sqlsrv:Server='.$servername .';', $username, $password);
 
