@@ -13,3 +13,5 @@ Building responsive sites that allows a smooth experience for the user is really
 
 
 That's how my desk looks like when developing responsive apps. The one tool that I cannot live without is Google [Chrome Dev Tools](https://developers.google.com/chrome-developer-tools/), as they allow to debug and inspect websites on tablets and phone remotely. On the big monitor you can see how the website is render on the phone below. It's indeed a really nice feature. Educate yourself on how to use it and master it, you will see that's a great tool and will boost your working speed.
+
+I hope that you enjoyed this post, I will continue writing about this topic in near future. Thanks for reading.
