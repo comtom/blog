@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migrating Php 5.2 apps using mssql to PDO functions 
+title: Migrating Php 5.2 apps using mssql to PDO functions
 ---
 
 ## Preface
@@ -14,7 +14,7 @@ PDO has a lot of beneficts, the gratest thing is how exception are handled (now 
 The new php version performance is quite good, I haven't measure it properly, but general server usage metrics are lower than before and the amount of hits and userbase are the same that before.
 
 ## Code
-Yes, finally the most interesting part. This code is licenced under GPL v3. Use it, and hack it, it would be nice to see more changes or improvements. Any comment would be great too.
+Yes, finally the most interesting part. This code is licenced under GPL v3. Use it, and hack it, would be nice to see more changes or improvements. Any comment would be great too. Feel free to leave them at the comments form at the bottom.
 
 {% highlight php %}
 <?php
@@ -107,7 +107,7 @@ if (! extension_loaded('mssql')) {
 
     function mssql_connect($servername, $username, $password, $new_link = false) {
         $pdo = new PDO('sqlsrv:Server='.$servername .';', $username, $password);
-        
+
         $pdo->setAttribute(PDO::SQLSRV_ENCODING_SYSTEM, 0);
 
         // cursor scroll is set to allow driver to count rows (mssql_num_rows)
