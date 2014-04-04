@@ -3,15 +3,18 @@ layout: post
 title: Migrating Php 5.2 apps using mssql to PDO functions
 ---
 
+
 ## Preface
 As mssql php extension is deprecated in Php 5.3 and above, the only way to keep using its functions was sticking with a 5.2 Php, but it's very outdated now and it's not supported any more. I'm just sick of Php 5.2 and really want to upgrade to latest stable version, 5.5. Luckly found a wrapper script to override those funtions that are deprecated in latest Php versions and call PDO functions for database access without modifying most of app's code.
 
-## Problems and beneficts
+
+## Problems and benefits
 The old set of funtions (the ones included in mssql php extension) where kind of broken, for example if you execute two stacked select statements, the first one works like a charm, but you can't access the second results dataset, actually if you run another query, anything, it will fail. Yes I know, that is ugly.
 
-PDO has a lot of beneficts, the gratest thing is how exception are handled (now raiserror statement returns the error to the app!) but as I was testing the app with Php 5.5 I noticed that a lot of PDO exceptions where raised, and that was fine, because before the deprecated extension was silently failing or hiding warnings. So this great improvement for the app, meant a lot of time fixing those exceptions.
+PDO has a lot of benefits, the gratest thing is how exception are handled (now raiserror statement returns the error to the app!) but as I was testing the app with Php 5.5 I noticed that a lot of PDO exceptions where raised, and that was fine, because before the deprecated extension was silently failing or hiding warnings. So this great improvement for the app, meant a lot of time fixing those exceptions.
 
 The new php version performance is quite good, I haven't measure it properly, but general server usage metrics are lower than before and the amount of hits and userbase are the same that before.
+
 
 ## Code
 Yes, finally the most interesting part. This code is licenced under GPL v3. Use it, and hack it, would be nice to see more changes or improvements. Any comment would be great too. Feel free to leave them at the comments form at the bottom.
