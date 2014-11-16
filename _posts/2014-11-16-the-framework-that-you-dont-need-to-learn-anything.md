@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Php Transparent Framework: The framework that you don't need to learn anything
+title: Php Transparent Framework The framework that you don't need to learn anything
 ---
 
 *Reinventing the wheel*
